@@ -6,7 +6,12 @@ public:
         int ans=INT_MAX;
         while(lb<=ub){
             int mid=lb+(ub-lb)/2;
-            if(nums[lb]<=nums[mid]){
+            if(nums[lb]<=nums[ub]){
+                ans=min(ans,nums[lb]);
+                break;
+            }
+
+            else if(nums[lb]<=nums[mid]){
                 ans=min(ans,nums[lb]);
             lb=mid+1;
             }
