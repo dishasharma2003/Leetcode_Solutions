@@ -5,7 +5,7 @@ class Solution {
 public:
     char non_capital(char ch) {
         if((ch >= 'A' && ch <= 'Z')||(ch>=48 && ch<=57 )){
-            return ch + ('a' - 'A'); // Use 'a' instead of 'A'
+            return ch + ('a' - 'A'); 
         }
         return ch;
     }
